@@ -25,7 +25,7 @@ def index(request):
     if message_text == '!mc start':
         try:
             r = requests.get(url = 'https://asia-southeast2-pekoland-server.cloudfunctions.net/start-server')
-            line_bot_api.reply_message(message_replyToken, TextSendMessage('Sono maen ajic'))
+            line_bot_api.reply_message(message_replyToken, TextSendMessage('Start'))
         except:
             return 'error'
 
